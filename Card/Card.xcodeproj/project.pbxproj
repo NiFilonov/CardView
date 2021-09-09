@@ -17,6 +17,8 @@
 		B860CF7326EA7D65000BE97D /* CardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B860CF7226EA7D65000BE97D /* CardUITests.swift */; };
 		B860CF9026EA875E000BE97D /* BaseCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B860CF8F26EA875E000BE97D /* BaseCardView.swift */; };
 		B860CF9226EA8777000BE97D /* BaseStyleProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B860CF9126EA8777000BE97D /* BaseStyleProvider.swift */; };
+		B860CF9526EA88E2000BE97D /* RotatingCardStyleProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B860CF9426EA88E2000BE97D /* RotatingCardStyleProvider.swift */; };
+		B860CF9726EA88FF000BE97D /* RotatingCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B860CF9626EA88FF000BE97D /* RotatingCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		B860CF7426EA7D65000BE97D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B860CF8F26EA875E000BE97D /* BaseCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCardView.swift; sourceTree = "<group>"; };
 		B860CF9126EA8777000BE97D /* BaseStyleProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseStyleProvider.swift; sourceTree = "<group>"; };
+		B860CF9426EA88E2000BE97D /* RotatingCardStyleProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotatingCardStyleProvider.swift; sourceTree = "<group>"; };
+		B860CF9626EA88FF000BE97D /* RotatingCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotatingCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				B860CF8E26EA874E000BE97D /* Base */,
+				B860CF9326EA88C2000BE97D /* RotatingCard */,
 			);
 			path = CardView;
 			sourceTree = "<group>";
@@ -148,6 +153,15 @@
 				B860CF9126EA8777000BE97D /* BaseStyleProvider.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		B860CF9326EA88C2000BE97D /* RotatingCard */ = {
+			isa = PBXGroup;
+			children = (
+				B860CF9426EA88E2000BE97D /* RotatingCardStyleProvider.swift */,
+				B860CF9626EA88FF000BE97D /* RotatingCardView.swift */,
+			);
+			path = RotatingCard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,7 +298,9 @@
 				B860CF9226EA8777000BE97D /* BaseStyleProvider.swift in Sources */,
 				B860CF9026EA875E000BE97D /* BaseCardView.swift in Sources */,
 				B860CF5126EA7D63000BE97D /* AppDelegate.swift in Sources */,
+				B860CF9526EA88E2000BE97D /* RotatingCardStyleProvider.swift in Sources */,
 				B860CF5326EA7D63000BE97D /* SceneDelegate.swift in Sources */,
+				B860CF9726EA88FF000BE97D /* RotatingCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
