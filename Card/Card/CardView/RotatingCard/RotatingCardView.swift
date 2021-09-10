@@ -30,6 +30,9 @@ final class RotatingCardView: BaseCardView {
     
     func flip() {
         // TODO: - Flip animation
+        UIView.animate(withDuration: 1.0) {
+            // TODO
+        }
     }
     
     // MARK: - Initialization
