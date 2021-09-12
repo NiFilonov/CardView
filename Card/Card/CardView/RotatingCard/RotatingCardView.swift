@@ -28,8 +28,23 @@ final class RotatingCardView: BaseCardView {
     
     // MARK: - Internal methods
     
-    func flip() {
+    func flip(card: BaseCardView) {
         // TODO: - Flip animation
+        if currentSide == .front {
+            UIView.animate(withDuration: 0.5) { [self] in
+                // card.text = question
+                card.backgroundColor = .red
+                UIView.transition(with: card, duration: 0.5, options: .transitionFlipFromLeft, animations: nil, completion: nil)
+            }
+        } else {
+            UIView.animate(withDuration: 0.5) { [self] in
+                //card.text = answer
+                card.backgroundColor = .yellow
+                UIView.transition(with: card, duration: 0.5, options: .transitionFlipFromRight, animations: nil, completion: nil)
+            }
+            
+        }
+        
     }
     
     // MARK: - Initialization
