@@ -7,15 +7,21 @@ final class RotatingCardView: BaseCardView {
     enum Side {
         case front
         case back
+        
+        mutating func toggle() {
+            if self == .front {
+                self = .back
+            } else {
+                self = .front
+            }
+        }
     }
     
     // MARK: - Internal properties
     
-    var currentSide: Side {
+    var currentSide: Side = .front
         // TODO: - Return current card side
-        return .front
-    }
-    
+     
     var isFrontSideShown: Bool {
         // TODO: - Check is current side is front
         return false
@@ -30,22 +36,22 @@ final class RotatingCardView: BaseCardView {
     
     func flip(card: BaseCardView) {
         // TODO: - Flip animation
-        if currentSide == .front {
-            UIView.animate(withDuration: 0.5) { [self] in
-                // card.text = question
-                card.backgroundColor = .red
-                UIView.transition(with: card, duration: 0.5, options: .transitionFlipFromLeft, animations: nil, completion: nil)
-            }
-        } else {
-            UIView.animate(withDuration: 0.5) { [self] in
-                //card.text = answer
-                card.backgroundColor = .yellow
-                UIView.transition(with: card, duration: 0.5, options: .transitionFlipFromRight, animations: nil, completion: nil)
-            }
-            
-        }
+        currentSide.toggle()
+        
+        UIView.transition(with: card,
+                          duration: 0.5,
+                          options: currentSide == .front ?
+                            .transitionFlipFromRight :
+                            .transitionFlipFromLeft,
+                          animations: nil,
+                          completion: {_ in self.updateUI()})
         
     }
+    
+    func updateUI() {
+        // TODO: - update ui of the card
+    }
+    
     
     // MARK: - Initialization
     
