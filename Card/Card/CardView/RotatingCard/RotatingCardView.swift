@@ -4,16 +4,12 @@ final class RotatingCardView: BaseCardView {
     
     // MARK: - Internal types
     
-    enum Side {
-        case front
-        case back
+    enum Side: Int {
+        case front = 1
+        case back = -1
         
         mutating func toggle() {
-            if self == .front {
-                self = .back
-            } else {
-                self = .front
-            }
+            self = Side(rawValue: -(rawValue))!
         }
     }
     
