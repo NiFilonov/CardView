@@ -14,4 +14,6 @@ protocol RotatingCardStyleProvider {
     
     var cornerRadius: CGFloat { get }
     
+    var animationDuration: AnimationDuration { get }
+    
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B80652DE26F07A2600B0CF86 /* AnimationDuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80652DD26F07A2600B0CF86 /* AnimationDuration.swift */; };
 		B860CF5126EA7D63000BE97D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B860CF5026EA7D63000BE97D /* AppDelegate.swift */; };
 		B860CF5326EA7D63000BE97D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B860CF5226EA7D63000BE97D /* SceneDelegate.swift */; };
 		B860CF5526EA7D63000BE97D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B860CF5426EA7D63000BE97D /* ViewController.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B80652DD26F07A2600B0CF86 /* AnimationDuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationDuration.swift; sourceTree = "<group>"; };
 		B860CF4D26EA7D63000BE97D /* Card.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Card.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B860CF5026EA7D63000BE97D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B860CF5226EA7D63000BE97D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 			children = (
 				B860CF9426EA88E2000BE97D /* RotatingCardStyleProvider.swift */,
 				B860CF9626EA88FF000BE97D /* RotatingCardView.swift */,
+				B80652DD26F07A2600B0CF86 /* AnimationDuration.swift */,
 			);
 			path = RotatingCard;
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B80652DE26F07A2600B0CF86 /* AnimationDuration.swift in Sources */,
 				B860CF5526EA7D63000BE97D /* ViewController.swift in Sources */,
 				B860CF9226EA8777000BE97D /* BaseStyleProvider.swift in Sources */,
 				B860CF9026EA875E000BE97D /* BaseCardView.swift in Sources */,

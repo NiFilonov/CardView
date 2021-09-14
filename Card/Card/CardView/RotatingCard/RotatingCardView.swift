@@ -25,13 +25,15 @@ final class RotatingCardView: BaseCardView {
         return currentSide == .back
     }
     
+    var style: RotatingCardStyleProvider!
+    
     // MARK: - Internal methods
     
-    func flip(card: BaseCardView) {
+    func flip() {
         currentSide.toggle()
         
-        UIView.transition(with: card,
-                          duration: 0.5,
+        UIView.transition(with: self,
+                          duration: style.animationDuration.time,
                           options: isFrontSideShown ?
                             .transitionFlipFromRight :
                             .transitionFlipFromLeft,
