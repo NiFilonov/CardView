@@ -4,43 +4,37 @@ final class RotatingCardView: BaseCardView {
     
     // MARK: - Internal types
     
-    enum Side {
-        case front
-        case back
+    enum Side: Int {
+        case front = 1
+        case back = -1
         
         mutating func toggle() {
-            if self == .front {
-                self = .back
-            } else {
-                self = .front
-            }
+            self = Side(rawValue: -(rawValue))!
         }
     }
     
     // MARK: - Internal properties
     
     var currentSide: Side = .front
-        // TODO: - Return current card side
      
     var isFrontSideShown: Bool {
-        // TODO: - Check is current side is front
-        return false
+        return currentSide == .front
     }
     
     var isBacksideShown: Bool {
-        // TODO: - Check is current side is back
-        return false
+        return currentSide == .back
     }
+    
+    var style: RotatingCardStyleProvider!
     
     // MARK: - Internal methods
     
-    func flip(card: BaseCardView) {
-        // TODO: - Flip animation
+    func flip() {
         currentSide.toggle()
         
-        UIView.transition(with: card,
-                          duration: 0.5,
-                          options: currentSide == .front ?
+        UIView.transition(with: self,
+                          duration: style.animationDuration.time,
+                          options: isFrontSideShown ?
                             .transitionFlipFromRight :
                             .transitionFlipFromLeft,
                           animations: nil,
