@@ -41,7 +41,7 @@ final class RotatingCardView: BaseCardView {
                           completion: {_ in self.updateUI()})
         
     }
-    
+
     func cardGoesRight() {
         currentSide = .front
         let finishPoint = CGPoint(x: frame.size.width*2, y: 2 * 0.0 + center.y)
@@ -60,9 +60,8 @@ final class RotatingCardView: BaseCardView {
             self.center = finishPoint
         },
                        completion: {_ in self.updateUI()})
-        
+    
     }
-
     
     func updateUI() {
         // TODO: - update card UI
