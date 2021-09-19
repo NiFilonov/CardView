@@ -68,6 +68,9 @@ final class RotatingCardView: BaseCardView {
         // TODO: - update card UI
     }
     
+    func updateUI2() {
+        // TODO: - update card UI
+    }
     
     // MARK: - Initialization
     
